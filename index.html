@@ -1,0 +1,160 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Pergamino. Trámite Ya</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<section class="wrap">
+	<div class="search">
+	<h1 class="search-title">Buscar Trámite</h1>
+	<form class="search-form  flex" action="">
+	<input type="text"><input class="submit"type="submit" value="BUSCAR"></form></div>
+	<nav class="folders">
+		<div class="personales">
+			<h2 class="back-r" id="buttonP">personales <div class="square back-r"></div></h2>
+			<nav class="h0" id="navP">
+				<ul class="flex">
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+				</ul>				
+			</nav>
+		</div>
+		<div class="municipales">
+			<h2 class="back-a" id="buttonM">municipales <div class="square back-a"></div></h2>
+			<nav class="h0" id="navM">
+				<ul class="flex">
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+				</ul>				
+			</nav>
+		</div>
+		<div class="registro-civil">
+			<h2 class="back-n" id="buttonR">registro civil <div class="square back-n"></div></h2>
+			<nav class="h0" id="navR">
+				<ul class="flex">
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+				</ul>				
+			</nav>
+		</div>
+		<div class="monotributo">
+			<h2 class="back-a2" id="buttonMo">monotributo <div class="square back-a2"></div></h2>
+			<nav class="h0" id="navMo">
+				<ul class="flex">
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+				</ul>				
+			</nav>
+		</div>
+		<div class="universidad">
+			<h2 class="back-r2" id="buttonU">universidad <div class="square back-r2"></div></h2>
+			<nav class="h0" id="navU">
+				<ul class="flex">
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+					<li><a href="">Opción</a></li>
+				</ul>				
+			</nav>
+		</div>
+	</nav>
+	
+</section>
+<script>
+	var $buttonP = document.getElementById('buttonP');
+	var $navP = document.getElementById('navP');
+	
+	var $buttonM = document.getElementById('buttonM');
+	var $navM = document.getElementById('navM');
+	
+	var $buttonR = document.getElementById('buttonR');
+	var $navR = document.getElementById('navR');
+	
+	var $buttonMo = document.getElementById('buttonMo');
+	var $navMo = document.getElementById('navMo');
+	
+	var $buttonU = document.getElementById('buttonU');
+	var $navU = document.getElementById('navU');
+	
+	var showNavP = function(){
+		$navP.classList.toggle('h100');	
+		
+	}
+	var showNavM = function(){
+		$navM.classList.toggle('h100');	
+	}
+	var showNavR = function(){
+		$navR.classList.toggle('h100');	
+	}
+	var showNavMo = function(){
+		$navMo.classList.toggle('h100');	
+	}
+	var showNavU = function(){
+		$navU.classList.toggle('h100');	
+	}
+	
+	
+	$buttonP.addEventListener("click", showNavP);
+	$buttonR.addEventListener("click", showNavR);
+	$buttonM.addEventListener("click", showNavM);
+	$buttonMo.addEventListener("click", showNavMo);
+	$buttonU.addEventListener("click", showNavU);
+</script>
+</body>
+</html>
