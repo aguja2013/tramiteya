@@ -1,5 +1,8 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Nunito:400,700);
+@import "normalize.styl"
 @import "nib"
+@import "style.styl"
+
 
 r 	 = #e6482a
 r2 	 = #e9452e
@@ -22,17 +25,16 @@ body
 	background-repeat no-repeat 
 	background-position center center 
 	background-attachment fixed
-	background-size cover
-	
+	background-size cover	
 	color b
 	font-family Nunito
 	font-size 16px
+	
+
+	
 h1
-	margin 0
-	
-	
-	
-	
+	margin .5rem 0 0 0
+	height 35px
 h2
 	cursor pointer	
 	font-weight 400
@@ -44,6 +46,7 @@ h2
 	text-align right
 	
 header
+
 	text-align center
 // img
 	// max-width 100%
@@ -51,7 +54,7 @@ header
 input
 	width 75%
 	align-items baseline
-	margin-bottom 2rem
+	margin-bottom .5rem
 	background b
 	border 2px solid a
 	height 1.8rem
@@ -79,7 +82,23 @@ ul
    display flex
    flex-flow row
    flex-wrap wrap
-   justify-content space-around 	
+   justify-content space-around 
+   align-items center
+   // vertical-align middle
+   
+.footer	
+	background back
+	height 50px
+	line-height 50px
+	font-size .8rem
+.footer a	
+	margin-left 2rem
+.footer p 
+	display inline-block
+	margin 0
+	
+	
+
 .h0 
 	height 0
 	// font-size 0px
@@ -88,16 +107,74 @@ ul
 	overflow hidden
 	transition 1s
 	
-.h100
-	
-	height 200px
-	
+.h100	
+	height 200px	
 	// display block
 	transition 1s	
+.logo
+	margin-bottom 0
+.menu
+	background n
+	color #000
+	left -100%
+	position absolute
+	top 60px
+	transition .5s
+	width 80%
+	z-index 11
+	
+.menu-activo
+	left 0
+.menu-font-gris
+	color #F2F2F2
+
+	
+.menu-li	
+	border-bottom 1px solid a2
+	color b
+	font-size 1rem
+	margin .2rem 1rem 
+	padding-bottom .5rem
+	&:last-child
+		background b
+		color n
+		cursor pointer
+		font-weight 600
+		margin 1rem auto
+		padding 0 
+		text-align center
+		width 50%
+// .menu-ul
+	// background n	
+	
+	
+.publi1
+.publi2
+.publi3
+.publi4
+	font-size 1.5rem
+	// margin-top 2rem
+	color n
+	background b
+	opacity .6
+	padding .5rem 0
+	width 95%
+.publi1
+	margin-left 60px
+.publi2
+	width 100%
+.publi3
+.publi4
+	margin-top 2rem
+
 .search-form
 	flex-wrap nowrap
+	
 .search-title
-	font-size 2.5rem
+	font-size 2rem
+.sponsor-abajo
+	margin-bottom 1rem
+	text-align center
 .square		
 	bottom -15
 	height 15px
@@ -110,9 +187,10 @@ ul
 	border-bottom 5px solid a
 	color b
 	width 24%
+	font-size .8rem
 	font-weight 700
 	height 2.2rem
-	padding-right .2rem
+	padding-right .5rem
 .wrap	
 	margin 0 auto
 	width 95%	
@@ -129,8 +207,20 @@ ul
 	h2
 		height 40px
 		line-height 40px
+	.menu	
+		width 50%
+	
 	.wrap	
 		width 80%
+
+@media screen and (min-width: 490px)
+
+	.flex	 
+	   flex-flow column
+	.menu	
+		width 40%
+	.search-form
+		flex-flow row
 		
 @media screen and (min-width: 600px)
 
@@ -140,3 +230,5 @@ ul
 		background-position center center 
 		background-attachment fixed
 		background-size cover
+	// .menu	
+		// width 25%

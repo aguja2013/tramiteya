@@ -7,12 +7,30 @@
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-<header><figure class="logo"><img src="img/logo.png" alt=""></figure></header>
+<header class="flex">
+	<span class="icon-icono-menu" id="icoMenu"></span>
+	<aside class="publi1" id="icoMenu2">BANNER-SPONSOR</aside>
+	<figure class="logo">
+		<img src="img/logo.png" alt="">
+	</figure>
+	<aside class="publi2">BANNER-SPONSOR</aside>
+</header>
+	<nav class="menu" id="Menu">
+		<ul class="menu-ul">
+			<li class="menu-li">Sugerir Trámite</li>
+			<li class="menu-li">Publicitar</li>
+			<li class="menu-li">Contacto</li>
+			<li class="menu-li" id="closeMenu">Cerrar Menú</li>
+		</ul>
+	</nav>
 <section class="wrap">
 	<div class="search">
-	<h1 class="search-title">Trámite</h1>
-	<form class="search-form  flex" action="">
-	<input type="text"><input class="submit" type="submit" value="BUSCAR"></form></div>
+		<h1 class="search-title">Trámite</h1>
+		<form class="search-form  flex" action="">
+			<input type="text">
+			<input class="submit" type="submit" value="BUSCAR">
+		</form>
+	</div>
 	<nav class="folders">
 		<div class="personales">
 			<h2 class="back-r" id="buttonP">personales <div class="square back-r"></div></h2>
@@ -117,6 +135,16 @@
 	</nav>
 	
 </section>
+<div class="sponsor-abajo flex">
+	<aside class="publi3">BANNER-SPONSOR</aside>
+	<aside class="publi4">BANNER-SPONSOR</aside>
+</div>
+<footer class="footer">
+	<p>© 2015 Trámite Ya</p>
+	<!-- <a href="#" class="footer">Aviso Legal</a> -->
+	<a href="#">Términos y condiciones</a>
+	<!-- <a href="#" class="footer">Política de privacidad</a> -->
+</footer>
 <script>
 	var $buttonP = document.getElementById('buttonP');
 	var $navP = document.getElementById('navP');
@@ -132,6 +160,19 @@
 	
 	var $buttonU = document.getElementById('buttonU');
 	var $navU = document.getElementById('navU');
+	
+	<!-- variables del menu -->
+	
+	var $buttonMenu = document.getElementById('icoMenu');
+	var $buttonClose = document.getElementById('closeMenu');
+	var $Menu = document.getElementById('Menu');
+	
+	
+	var showMenu = function(){
+		$Menu.classList.toggle('menu-activo');	
+		$buttonMenu.classList.toggle('menu-font-gris');	
+		
+	}
 	
 	var showNavP = function(){
 		$navP.classList.toggle('h100');	
@@ -156,6 +197,9 @@
 	$buttonM.addEventListener("click", showNavM);
 	$buttonMo.addEventListener("click", showNavMo);
 	$buttonU.addEventListener("click", showNavU);
+	
+	$buttonMenu.addEventListener("click", showMenu);
+	$buttonClose.addEventListener("click", showMenu);
 </script>
 </body>
 </html>
