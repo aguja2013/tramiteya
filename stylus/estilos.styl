@@ -20,6 +20,10 @@ n    = #000
    // flex arguments
 a
 	color b 
+body
+	color b
+	font-family Nunito
+	font-size 16px
 body.home
 	background back
 	background url('../img/background-p.jpg')
@@ -27,11 +31,10 @@ body.home
 	background-position center center 
 	background-attachment fixed
 	background-size cover	
-	color b
-	font-family Nunito
-	font-size 16px
 
-	
+
+h1
+	margin 0
 h2
 	cursor pointer	
 	font-weight 400
@@ -42,9 +45,7 @@ h2
 	position relative
 	text-align right
 	
-header.header
-	justify-content space-around 
-	text-align center
+
 // img
 	// max-width 100%
 	// height 100%
@@ -56,11 +57,16 @@ input
 	border 2px solid a
 	height 1.8rem
 	
-li
+li.h0
+
 	list-style none
 	font-size 1.5rem
 	padding 1rem
 	
+nav.h0
+	ul
+		li
+		flex-wrap wrap	
 ul	
 	margin 0
 	padding 0
@@ -78,11 +84,13 @@ ul
 .flex
    display flex
    flex-flow row
-   flex-wrap wrap
-  
+   flex-wrap nowrap  
    align-items center
    // vertical-align middle
-   
+.flex-jc-sa
+	justify-content space-around
+.flex-jc-c
+	justify-content center
 .footer	
 	background back
 	height 50px
@@ -99,19 +107,25 @@ ul
 .h0 
 	height 0
 	// font-size 0px
-	// display none
-	
+	// display none	
 	overflow hidden
 	transition 1s
 	
+
+		
 .h100	
 	height 200px	
 	// display block
-	transition 1s	
+	transition 1s
+.header
+	flex-flow column
+	justify-content space-around 
+	text-align center	
 .logo
 	margin-bottom 0
 .menu
 	background n
+	border-bottom 3px solid b
 	color #000
 	left -100%
 	position absolute
@@ -131,7 +145,8 @@ ul
 	color b
 	font-size 1rem
 	margin .2rem 1rem 
-	padding-bottom .5rem
+	padding 1rem
+	list-style none
 	&:last-child
 		background b
 		color n
@@ -142,9 +157,11 @@ ul
 		text-align center
 		width 50%
 // .menu-ul
-	// background n	
+	// flex-wrap wrap
 	
-	
+// .opciones-ul
+	// flex-wrap wrap
+		
 .publi1
 .publi2
 .publi3
@@ -157,7 +174,7 @@ ul
 	padding .5rem 0
 	width 95%
 .publi1
-	margin-left 60px
+	margin-left 100px
 .publi2
 	width 100%
 .publi3
@@ -197,7 +214,7 @@ ul
 	
 @media screen and (min-width: 400px)
 
-	body
+	body.home
 		background url('../img/background-m.jpg')
 		background-repeat no-repeat 
 		background-position center center 
@@ -223,7 +240,7 @@ ul
 		
 @media screen and (min-width: 600px)
 
-	body
+	body.home
 		background url('../img/background.jpg')
 		background-repeat no-repeat 
 		background-position center center 
