@@ -4,17 +4,17 @@
 	<meta charset="UTF-8">
 	<title>Pergamino. Trámite Ya</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-<header class="flex">
+<body class="home">
+<header class="header  flex">
 	<span class="icon-icono-menu" id="icoMenu"></span>
 	<aside class="publi1" id="icoMenu2">BANNER-SPONSOR</aside>
 	<figure class="logo">
 		<img src="img/logo.png" alt="">
 	</figure>
 	<aside class="publi2">BANNER-SPONSOR</aside>
-</header>
 	<nav class="menu" id="Menu">
 		<ul class="menu-ul">
 			<li class="menu-li">Sugerir Trámite</li>
@@ -23,6 +23,8 @@
 			<li class="menu-li" id="closeMenu">Cerrar Menú</li>
 		</ul>
 	</nav>
+</header>
+	
 <section class="wrap">
 	<div class="search">
 		<h1 class="search-title">Trámite</h1>
@@ -145,61 +147,6 @@
 	<a href="#">Términos y condiciones</a>
 	<!-- <a href="#" class="footer">Política de privacidad</a> -->
 </footer>
-<script>
-	var $buttonP = document.getElementById('buttonP');
-	var $navP = document.getElementById('navP');
-	
-	var $buttonM = document.getElementById('buttonM');
-	var $navM = document.getElementById('navM');
-	
-	var $buttonR = document.getElementById('buttonR');
-	var $navR = document.getElementById('navR');
-	
-	var $buttonMo = document.getElementById('buttonMo');
-	var $navMo = document.getElementById('navMo');
-	
-	var $buttonU = document.getElementById('buttonU');
-	var $navU = document.getElementById('navU');
-	
-	<!-- variables del menu -->
-	
-	var $buttonMenu = document.getElementById('icoMenu');
-	var $buttonClose = document.getElementById('closeMenu');
-	var $Menu = document.getElementById('Menu');
-	
-	
-	var showMenu = function(){
-		$Menu.classList.toggle('menu-activo');	
-		$buttonMenu.classList.toggle('menu-font-gris');	
-		
-	}
-	
-	var showNavP = function(){
-		$navP.classList.toggle('h100');	
-		
-	}
-	var showNavM = function(){
-		$navM.classList.toggle('h100');	
-	}
-	var showNavR = function(){
-		$navR.classList.toggle('h100');	
-	}
-	var showNavMo = function(){
-		$navMo.classList.toggle('h100');	
-	}
-	var showNavU = function(){
-		$navU.classList.toggle('h100');	
-	}
-	
-	
-	$buttonP.addEventListener("click", showNavP);
-	$buttonR.addEventListener("click", showNavR);
-	$buttonM.addEventListener("click", showNavM);
-	$buttonMo.addEventListener("click", showNavMo);
-	$buttonU.addEventListener("click", showNavU);
-	
-	$buttonMenu.addEventListener("click", showMenu);
-	$buttonClose.addEventListener("click", showMenu);
-</script>
+<script src="js/js.js"></script>
 </body>
 </html>

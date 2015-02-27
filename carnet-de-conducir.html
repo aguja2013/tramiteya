@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Carnet de conducir en Pergamino.</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Requisitos, documentación a presentar y dirección para solicitud y renovación del carnet de conducir para el partido y ciuda<d de Pergamino">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="secc">
+	<header class="flex  header2">
+		<span class="icon-icono-menu  back-icon" id="icoMenu"></span>
+		<figure class="logo2">
+			<img src="img/logoN.png" alt="">
+		</figure>
+		<aside class="publi-1CC">BANNER<br />-SPONSOR</aside>
+		<nav class="menu" id="Menu">
+			<ul class="menu-ul">
+				<li class="menu-li">Home</li>
+				<li class="menu-li">Categorías</li>
+				<li class="menu-li">Sugerir Trámite</li>
+				<li class="menu-li">Publicitar</li>
+				<li class="menu-li">Contacto</li>
+				<li class="menu-li" id="closeMenu">Cerrar Menú</li>
+			</ul>
+		</nav>
+	</header>
+	<footer class="footer">
+		<p>© 2015 Trámite Ya</p>		
+		<a href="#">Términos y condiciones</a>	
+	</footer>
+<script>
+	var $buttonMenu = document.getElementById('icoMenu');
+	var $buttonClose = document.getElementById('closeMenu');
+	var $Menu = document.getElementById('Menu');
+	
+	
+	var showMenu = function(){
+		$Menu.classList.toggle('menu-activo');	
+		$buttonMenu.classList.toggle('menu-font-gris');			
+	}
+	
+	$buttonMenu.addEventListener("click", showMenu);
+	$buttonClose.addEventListener("click", showMenu);
+</script>
+</body>
+</html>

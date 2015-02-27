@@ -2,6 +2,7 @@
 @import "normalize.styl"
 @import "nib"
 @import "style.styl"
+@import "estilos-secc.styl"
 
 
 r 	 = #e6482a
@@ -19,7 +20,7 @@ n    = #000
    // flex arguments
 a
 	color b 
-body
+body.home
 	background back
 	background url('../img/background-p.jpg')
 	background-repeat no-repeat 
@@ -29,12 +30,8 @@ body
 	color b
 	font-family Nunito
 	font-size 16px
-	
 
 	
-h1
-	margin .5rem 0 0 0
-	height 35px
 h2
 	cursor pointer	
 	font-weight 400
@@ -45,8 +42,8 @@ h2
 	position relative
 	text-align right
 	
-header
-
+header.header
+	justify-content space-around 
 	text-align center
 // img
 	// max-width 100%
@@ -82,7 +79,7 @@ ul
    display flex
    flex-flow row
    flex-wrap wrap
-   justify-content space-around 
+  
    align-items center
    // vertical-align middle
    
@@ -172,6 +169,8 @@ ul
 	
 .search-title
 	font-size 2rem
+	height 35px
+	margin .5rem 0 0 0
 .sponsor-abajo
 	margin-bottom 1rem
 	text-align center
